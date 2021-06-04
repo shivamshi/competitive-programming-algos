@@ -1,1 +1,1 @@
-# cp-algos
+# cp-shortcuts
