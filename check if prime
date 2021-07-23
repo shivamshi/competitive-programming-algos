@@ -1,6 +1,8 @@
 #Except sieve of erastosthenes , it is one of the most efficient way to check if given number is prime or not 
-#Python code
 
+------------------------------------------------------------------------
+
+#Python code
 def isprime(n):
     if n<2: return False
     if n==2 or n==3: return True
@@ -9,3 +11,14 @@ def isprime(n):
         if n%i==0 or n%(i+2)==0: return False 
     return True
     
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    
+//cpp code
+bool isprime(long long n){
+    if (n<2){return false;}
+    if ((n==2) || (n==3)) {return true;}
+    if (n%2==0 || n%3==0){ return false;}
+    for(long long i=5;i<=sqrt(n+1);i+=6){
+        if ((n%i==0 )||(n%(i+2)==0)){ return false ;}}
+    return true;
+    }
